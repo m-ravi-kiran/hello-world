@@ -1,3 +1,12 @@
-# hello-world
-first repository
-there are no changes to submit. this is just a sample commit session. im practicing how type without looking at the screen. BINGO
+API-AUTOMATION
+==============
+
+#About
++ API Testing script done using TestNG.
+
+#How To Use
+
+##Configuration files
+
+###TestNG .xml file
+Configure the TestNG's .xml file by specifying the groups and classes.
