@@ -39,8 +39,7 @@ Add a table in Postgresql Database with the test data.
 ?? should include the keys required ??
 
 ###Test Cases
-`/src/main/java/com/delhivery/tests/modules/service_name/FirstTest.java` <br />
-Write you TestNG test cases in the file FirstTest.java with the @Test annotation.
+Write you TestNG test cases in the file .java with the @Test annotation.
 ```bash
 @Test(groups = {"group_name"})
   public void testFunction() throws Exception {
