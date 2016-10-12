@@ -2,7 +2,7 @@ API-AUTOMATION
 ==============
 
 #About<br />
-API Testing script done using TestNG.
+API Testing script using TestNG.
 
 #Getting Started
 
