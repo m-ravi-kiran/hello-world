@@ -34,9 +34,25 @@ Configure the xml file (eg: file_name.xml) of TestNG by specifying the groups an
 `/config/config_name/config_name.config` <br />
 Configure the .config file (eg: config_name/config_name.config) to suit a service. Specify the endpoint and the details of the Data Base being used.
 
-###Initializing the Database
+###Initializing the Postgres Database
 Add a table in Postgresql Database with the test data.
-?? should include the keys required ??
+```bash
+sudo -su postgres psql
+CREATE USER your-username WITH PASSWORD your-password;
+CREATE DATABASE database_name OWNER your-username;
+GRANT ALL PRIVILEGES ON database_name TO your-username;
+CREATE TABLE table_name(
+  id INTEGER NOT NULL,
+  service VARCHAR,
+  requestjson VARCHAR,
+  reqtype VARCHAR, --request type
+  qparam VARCHAR, -- query parameter
+  expectedjson VARCHAR,
+  httpcode INTEGER,
+  baseurl VARCHAR,
+    PRIMARY KEY (id)
+);
+```
 
 ###Test Cases
 Write you TestNG test cases in the file .java with the @Test annotation.
